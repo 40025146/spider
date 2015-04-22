@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>爬蟲練習</title>
+	<link rel="stylesheet" type="text/css" href="boostrap/css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="boostrap/css/bootstrap-theme.css">
+	<script type="text/javascript" src="boostrap/jquery.min.js"></script>
+	<script type="text/javascript" src="boostrap/js/bootstrap.js"></script>
+</head>
+<body>
+<div id="get">
+	
+</div>
+
+<script type="text/javascript">
+	$.ajax({
+	  url: "http://www.blood.org.tw/Internet/main/index.aspx",
+	  dataType: "jsonp",
+	  jsonpCallback:"callback",
+	  success: function(json){
+	    //jQuery會自動將結果傳入(如果有設定callback函式的話，兩者都會執行)
+	    console.log(json);
+	  },
+	  error: function(){
+	    alert('fail');
+      }
+	});
+</script>
+</body>
+</html>
