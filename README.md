@@ -6,3 +6,7 @@
 
 結果呈現
 ![alt tag](https://raw.githubusercontent.com/40025146/spider/master/pic1.png)
+
+
+設備環境
+python 2.7 以上
