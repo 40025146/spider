@@ -2,7 +2,7 @@ import urlparse
 import sys
 import urllib
 import json
-from bs4 import BeautifulSoup
+
 from pyquery import PyQuery as pq
 
 q = pq(url='http://www.blood.org.tw/Internet/main/index.aspx')
